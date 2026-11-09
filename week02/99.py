@@ -1,9 +1,6 @@
-# print("*")：自带换行效果
-# print("*",end="")end表示每一次输出以什么表示结束，默认\n
-# m,n 长方形
-m = int(input("长"))
-n = int(input("宽"))
-for i in range(n):
-    for x in range(m):
-        print("*", end="")
+# 99乘法表，嵌套循环
+# 第一个数是列，第二个数是行，外层循环控制行，是第二个数
+for i in range(1, 10):
+    for j in range(1, i + 1):
+        print(f"{j}x{i}={j * i}", end="\t")
     print()
